@@ -1,63 +1,3 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
-
-// const styles = theme => ({
-// 	root: {
-// 		flexGrow: 1,
-// 		height: 440,
-// 		zIndex: 1,
-// 		overflow: 'hidden',
-// 		position: 'relative',
-// 		display: 'flex',
-// 		width: '100%',
-// 	},
-// 	toolbar: theme.mixins.toolbar,
-// 	drawerPaper: {
-// 		width: drawerWidth,
-// 		[theme.breakpoints.up('md')]: {
-// 			position: 'relative',
-// 		},
-// 	}
-// });
-
-// const drawer = props => (
-//     <div>
-//         <div className={props.classes.toolbar} />
-//         <Divider />
-//         <List>{mailFolderListItems}</List>
-//     </div>
-// );
-
-// const Layout = props => ({
-//     render() {
-//         return (
-//             <div className={classes.root}>
-//                 <Hidden smDown implementation="css">
-//                     <Drawer
-//                         variant="permanent"
-//                         open
-//                         classes={{
-//                             paper: classes.drawerPaper,
-//                         }}
-//                     >
-//                         {drawer}
-//                     </Drawer>
-//                 </Hidden>
-//                 <main>{props.children}</main>
-//             </div>
-//         );
-//     }
-// });
-
-
-// Layout.propTypes = {
-//     classes: PropTypes.object.isRequired,
-//     theme: PropTypes.object.isRequired,
-//     emails: PropTypes.array,
-// };
-
-// export default Layout;
-
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
@@ -66,7 +6,6 @@ import List from '@material-ui/core/List';
 import Hidden from '@material-ui/core/Hidden';
 import Divider from '@material-ui/core/Divider';
 import { mailFolderListItems } from '../components/titleData';
-import ListMessages from '../components/ListMessages';
 
 const drawerWidth = 240;
 
