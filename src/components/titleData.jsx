@@ -12,7 +12,10 @@ import ReportIcon from '@material-ui/icons/Report';
 
 export const mailFolderListItems = (
 	<div>
-		<ListItem button>
+		<ListItem
+			button
+			onClick={() => document.location.assign('/home')}
+		>
 			<ListItemIcon>
 				<InboxIcon />
 			</ListItemIcon>
@@ -30,6 +33,6 @@ export const mailFolderListItems = (
 			</ListItemIcon>
 			<ListItemText primary="Send mail" />
 		</ListItem>
-		
+
 	</div>
 );

@@ -1,14 +1,19 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Switch } from 'react-router-dom';
 import Layout from './src/containers/Layout';
+import Routes from './src/routes';
 
 
 render(
     (
-        <BrowserRouter>
-            <Layout />
-        </BrowserRouter>
+        <Layout>
+            <BrowserRouter>
+                <Switch>
+                    <Routes />
+                </Switch>
+            </BrowserRouter>
+        </Layout>
     ),
     document.getElementById('root')
 );
